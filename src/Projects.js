@@ -52,7 +52,7 @@ export default function FeaturedProjects() {
     <section className="flex h-full flex-col justify-center items-center text-2xl pt-[50px] md:pt-[70px]">
       <div className="flex flex-col items-start w-[80%] max-w-6xl px-4 md:px-8">
       <h2 className="text-purple-600 text-2xl sm:text-3xl font-semibold pl-14 ">
-          &lt;Projects&gt;
+          &lt;MyProjects&gt;
         </h2>
         <section className="p-2 flex flex-col gap-6 w-full mx-auto">
           {projects.map((project, index) => (
@@ -107,7 +107,7 @@ export default function FeaturedProjects() {
           ))}
         </section>
         <h2 className="text-purple-600 text-2xl sm:text-3xl font-semibold pl-14 ">
-          &lt;/ Projects&gt;
+          &lt;/MyProjects&gt;
         </h2>
       </div>
     </section>
