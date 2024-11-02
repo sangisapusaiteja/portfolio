@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply to the whole page */
+body {
+    overflow: auto;
+  }
+  
+  /* Custom scrollbar for Chrome, Safari, and Edge */
+  ::-webkit-scrollbar {
+    width: 6px; /* Narrow scrollbar */
+    height: 6px; /* For horizontal scrollbar */
+  }
+  
+  /* Track (background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: black; /* Light background color for contrast */
+  }
+  
+  /* Handle (scrollbar thumb) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #6a0dad; /* Purple color for the handle */
+    border-radius: 10px; /* Sharp edges */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #6a0dad; /* Darker purple when hovering */
+    border: #6a0dad;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
