@@ -44,14 +44,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex h-[900px] flex-col justify-center items-center text-2xl pl-[60px]">
+    <div className="flex h-screen flex-col justify-center items-center text-2xl pl-[60px]">
       <div>
-        <h2 className="text-purple-500 text-2xl sm:text-3xl font-medium">
+        <h2 className="text-purple-500 text-xl sm:text-2xl font-none">
           &lt;contact&gt;
         </h2>
 
-        <p className=" mb-4 text-xl sm:text-3xl w-[80%] ">Contact Me!</p>
-        <p className=" mb-4 text-xl sm:text-3xl w-[80%]">
+        <p className=" mb-4 text-sm md:text-xl w-[80%] ">Contact Me!</p>
+        <p className=" mb-4 text-sm md:text-xl w-[80%]">
           If you have any questions, please fill out the form, and I’ll respond
           to you soon!
         </p>
@@ -63,7 +63,7 @@ const Contact = () => {
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
-            className="mb-4 p-2 text-xl w-[80%]  md:w-full sm:text-3xl border border-purple-500 rounded bg-transparent   focus:border-purple-500 focus:outline-none"
+            className="mb-4 p-2  w-[80%]  md:w-full text-sm md:text-xl border border-purple-500 rounded bg-transparent   focus:border-purple-500 focus:outline-none"
             required
           />
           <input
@@ -72,7 +72,7 @@ const Contact = () => {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            className="mb-4 p-2  w-[80%]  md:w-full  border text-xl sm:text-3xl border-purple-500 rounded bg-transparent  focus:border-purple-500 focus:outline-none"
+            className="mb-4 p-2  w-[80%]  md:w-full text-sm md:text-xl border border-purple-500 rounded bg-transparent   focus:border-purple-500 focus:outline-none"
             required
           />
           <textarea
@@ -80,13 +80,13 @@ const Contact = () => {
             placeholder="Your Message"
             value={formData.message}
             onChange={handleChange}
-            className="mb-4 w-[80%]   md:w-full  p-2 border text-xl sm:text-3xl border-purple-500 rounded bg-transparent   focus:border-purple-500 focus:outline-none"
+            className="mb-4 p-2  w-[80%]  md:w-full text-sm md:text-xl border border-purple-500 rounded bg-transparent   focus:border-purple-500 focus:outline-none"
             rows="4"
             required
           />
           <button
             type="submit"
-            className="w-[80%] border    md:w-full  text-xl sm:text-3xl border-purple-500 text-purple-500 px-4 py-2 rounded hover:text-white hover:bg-purple-500 transition duration-300"
+            className="w-[80%] border    md:w-full    text-sm md:text-xl border-purple-500 text-purple-500 px-4 py-2 rounded hover:text-white hover:bg-purple-500 transition duration-300"
             disabled={loading}
           >
             {loading ? "Sending..." : "Send Message"}
@@ -94,12 +94,12 @@ const Contact = () => {
         </form>
 
         {success && (
-          <p className="text-green-500 mt-4 text-xl sm:text-3xl">
+          <p className="text-green-500 mt-4  text-sm md:text-xl">
             Message sent successfully!
           </p>
         )}
 
-        <h2 className="mt-2 text-purple-500 text-2xl sm:text-3xl font-medium">
+        <h2 className="text-purple-500 text-xl sm:text-2xl font-none ">
           &lt;/ contact&gt;
         </h2>
       </div>

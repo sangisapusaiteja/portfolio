@@ -6,7 +6,6 @@ import Contact from "./Contact";
 import GetInTouch from "./GetInTouch";
 import SocialIcons from "./SocialIcons";
 import EmailVertical from "./EmailVertical";
-import Logo from "./Logo";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import { FaAdjust } from "react-icons/fa";

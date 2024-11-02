@@ -9,7 +9,7 @@ export default function FeaturedProjects() {
     {
       title: "Portfolio Website",
       description:
-        "I built a modern, responsive portfolio website using React, Tailwind CSS, and minimal backend integration. The site showcases my experience, skills, and projects with a sleek, user-friendly design. It includes a contact form that allows visitors to submit inquiries, which I receive via email. Additionally, I implemented a smooth color theme toggle, enabling users to switch between light and dark modes for an enhanced viewing experience.",
+        "I built a modern, responsive portfolio website using React and Tailwind CSS, showcasing my skills and projects. It features a contact form for inquiries and a color theme toggle for light and dark modes.",
       tags: ["VS Code", "React.js", "Tailwind CSS"],
       imageUrl: Portfolio,
       links: {
@@ -50,15 +50,15 @@ export default function FeaturedProjects() {
 
   return (
     <section className="flex h-full flex-col justify-center items-center text-2xl pt-[50px] md:pt-[70px]">
-      <div className="flex flex-col items-start w-[80%] max-w-6xl px-4 md:px-8">
-      <h2 className="text-purple-600 text-2xl sm:text-3xl font-semibold pl-14 ">
+      <div className="flex flex-col items-start w-[80%] max-w-6xl px-3 md:px-8">
+        <h2 className="text-purple-500 text-xl sm:text-2xl font-none pl-[30px]">
           &lt;MyProjects&gt;
         </h2>
         <section className="p-2 flex flex-col gap-6 w-full mx-auto">
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`flex flex-col md:flex-row items-center border border-purple-500 shadow-lg p-3 md:p-6 rounded-lg ${
+              className={`flex flex-col md:flex-row items-center border border-purple-500  shadow-lg p-3 md:p-6  ${
                 index % 2 === 1 ? "md:flex-row-reverse" : ""
               }`}
             >
@@ -66,7 +66,7 @@ export default function FeaturedProjects() {
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-48 md:h-56 lg:h-64 object-cover rounded-lg"
+                  className="w-full h-48 md:h-56 lg:h-64 object-cover"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
@@ -91,7 +91,9 @@ export default function FeaturedProjects() {
                 <h3 className="text-xl md:text-2xl text-purple-500 font-semibold mb-2">
                   {project.title}
                 </h3>
-                <p className="text-base md:text-lg mb-3">{project.description}</p>
+                <p className="text-sm md:text-xl mb-3">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (
                     <span
@@ -106,7 +108,7 @@ export default function FeaturedProjects() {
             </div>
           ))}
         </section>
-        <h2 className="text-purple-600 text-2xl sm:text-3xl font-semibold pl-14 ">
+        <h2 className="text-purple-500 text-xl sm:text-2xl font-none pl-[30px]">
           &lt;/MyProjects&gt;
         </h2>
       </div>

@@ -7,12 +7,12 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="flex h-[1000px] flex-col lg:flex-row justify-center items-center text-lg pl-[60px] w-[90%]">
+    <div className="flex h-screen flex-col lg:flex-row justify-center items-center text-lg pl-[60px] w-[90%]">
       <div className="flex flex-col justify-start items-start sm:items-start max-w-lg lg:mr-10">
-        <h2 className="text-purple-500 text-2xl sm:text-3xl font-medium ">
+        <h2 className="text-purple-500 text-xl sm:text-2xl font-none">
           &lt;GetInTouch&gt;
         </h2>
-        <div className="p-5 md:p-0 flex flex-col text-left sm:text-left mb:text-3xl">
+        <div className="p-5 md:p-0 flex flex-col text-left sm:text-left text-sm md:text-xl">
           <p className="mb-2 sm:mb-4">Get In Touch</p>
           <p className="mb-2 sm:mb-4">
             I’m currently looking for any new opportunities,
@@ -53,7 +53,9 @@ const GetInTouch = () => {
           </p>
           <p className="mb-2 sm:mb-4 mt-4">
             Contact Telephone:{" "}
-            <a className="text-purple-500" href="tel:+918247714017">+91 82477 14017</a>
+            <a className="text-purple-500" href="tel:+918247714017">
+              +91 82477 14017
+            </a>
           </p>
           <button
             onClick={mailMe}
@@ -63,7 +65,7 @@ const GetInTouch = () => {
             Say Hello
           </button>
         </div>
-        <h2 className="mt-2 text-purple-500 text-2xl sm:text-3xl font-medium">
+        <h2 className="text-purple-500 text-xl sm:text-2xl font-none">
           &lt;/ GetInTouch&gt;
         </h2>
       </div>
@@ -71,7 +73,7 @@ const GetInTouch = () => {
       <img
         src={sai}
         alt="Your Description"
-        className="hidden lg:block w-[300px] h-[400px] rounded-lg" 
+        className="hidden lg:block w-[300px] h-[400px]  border-[3px] border-purple-500"
       />
     </div>
   );

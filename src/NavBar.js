@@ -40,7 +40,9 @@ const NavBar = ({ isWhiteBackground }) => {
       <ul
         className={`${
           isMenuOpen ? "flex" : "hidden"
-        } flex-col md:flex md:flex-row md:justify-end items-center absolute md:static top-16 left-0 w-full md:w-auto bg-black md:bg-transparent text-white md:text-inherit z-10 p-4 md:p-0 overflow-y-auto max-h-[70vh] md:max-h-full space-y-4 md:space-y-0 md:space-x-6 transition-all duration-300`}
+        } flex-col md:flex md:flex-row md:justify-end items-center absolute md:static top-16 left-0 w-full md:w-auto ${
+          isWhiteBackground ? " text-black  bg-white" : " text-white bg-black"
+        }    md:text-inherit z-10 p-4 md:p-0 overflow-y-auto max-h-[70vh] md:max-h-full space-y-4 md:space-y-0 md:space-x-6 transition-all duration-300`}
       >
         <li>
           <a
