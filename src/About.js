@@ -8,18 +8,18 @@ const About = () => {
   };
 
   return (
-    <div className="flex  flex-col justify-center items-end md:items-center  text-2xl h-screen  ml-10  md:pt-0 ">
+    <div className="flex flex-col justify-center items-center  text-2xl h-screen">
       <div className="flex flex-col md:flex-row items-center md:w-[80%]">
         <img
           src={myPhoto}
           alt="Saiteja"
-          className="mb-5 w-[300px] md:w-[500px] h-[300px] md:h-[500px] rounded-full mr-10 md:mr-0 border-[3px] border-purple-500"
+          className="mb-5 w-[300px] md:w-[500px] h-[300px] md:h-[500px] rounded-full  mx-10  border-[3px] border-purple-500"
         />
         <div>
           <h2 className="text-purple-500 text-xl sm:text-2xl font-none pl-[60px]">
             &lt;About&gt;
           </h2>
-          <div className="p-5 flex flex-col items-center gap-10 text-sm md:text-xl md:p-0">
+          <div className="p-5 flex flex-col items-center gap-10 text-sm md:text-xl">
             <p className="w-[80%]">
               I'm Saiteja, a web developer with expertise in front-end and
               back-end tech, skilled in React.js, Next.js, and Tailwind CSS. I
@@ -45,7 +45,7 @@ const About = () => {
             </button>
           </div>
           <h2 className="text-purple-500 text-xl sm:text-2xl font-none pl-[60px]">
-            &lt;/ About&gt;
+            &lt;/About&gt;
           </h2>
         </div>
       </div>

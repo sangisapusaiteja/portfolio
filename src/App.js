@@ -40,28 +40,29 @@ const App = () => {
           }
         />
       </div>
-
-      <div id="intro">
-        <IntroCard />
-      </div>
-      <div id="about">
-        <About />
-      </div>
-      <div id="experience">
-        {" "}
-        <Experience />{" "}
-      </div>
-      <div id="projects">
-        {" "}
-        <Projects />{" "}
-      </div>
-      <div id="contact">
-        {" "}
-        <Contact />{" "}
-      </div>
-      <div id="getintouch">
-        {" "}
-        <GetInTouch />{" "}
+      <div className="flex flex-col items-center justify-between">
+        <div id="intro">
+          <IntroCard />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div id="experience">
+          {" "}
+          <Experience />{" "}
+        </div>
+        <div id="projects">
+          {" "}
+          <Projects />{" "}
+        </div>
+        <div id="contact">
+          {" "}
+          <Contact />{" "}
+        </div>
+        <div id="getintouch">
+          {" "}
+          <GetInTouch />{" "}
+        </div>
       </div>
 
       <SocialIcons isWhiteBackground={isWhiteBackground} />

@@ -7,8 +7,8 @@ const GetInTouch = () => {
   };
 
   return (
-    <div className="flex h-screen flex-col lg:flex-row justify-center items-center text-lg pl-[60px] w-[90%]">
-      <div className="flex flex-col justify-start items-start sm:items-start max-w-lg lg:mr-10">
+    <div className="flex  h-screen flex-col lg:flex-row justify-center items-center text-lg pl-[60px] w-[90%]">
+      <div className="flex flex-col justify-start items-start sm:items-start max-w-lg lg:mr-10 py-4">
         <h2 className="text-purple-500 text-xl sm:text-2xl font-none">
           &lt;GetInTouch&gt;
         </h2>
