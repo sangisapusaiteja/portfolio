@@ -4,7 +4,7 @@ const Experience = () => {
   const experiences = [
     {
       title: "Fullstack Developer @ Sumeru Software Solutions",
-      duration: "October 2024 - Present",
+      duration: "january 2024 - Present",
       responsibilities: [
         "Deliver high-quality, robust production code for a diverse range of projects, providing effective solutions for clients such as Art of Living International.",
         "Collaborate with creative directors to research, develop, and architect technical solutions that align with business goals.",
