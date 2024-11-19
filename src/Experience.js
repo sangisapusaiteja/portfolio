@@ -3,7 +3,7 @@ import React from "react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Fullstack Developer @ Sumeru Software Solutions",
+      title: "Fullstack Developer @ Sumeru Solutions",
       duration: "january 2024 - Present",
       responsibilities: [
         "Deliver high-quality, robust production code for a diverse range of projects, providing effective solutions for clients such as Art of Living International.",
