@@ -1,10 +1,11 @@
 import React from "react";
 import myPhoto from "./assets/images/myphoto.png";
 import myCV from "./assets/cv.pdf";
+import Resume from "./assets/Saiteja-Sangisapu-Resume.pdf";
 
 const About = () => {
   const handleCVClick = () => {
-    window.open(myCV, "_blank");
+    window.open(Resume, "_blank");
   };
 
   return (
@@ -23,13 +24,12 @@ const About = () => {
             <p className="w-[80%]">
               I'm Saiteja, a web developer with expertise in front-end and
               back-end tech, skilled in React.js, Next.js, and Tailwind CSS. I
-              work as a front-end developer at Sumeru Software Solutions on
-              Project MVP for the Art of Living International.
+              work as a front-end developer at TECHVED Solutions on Project MVP
+              for the Art of Living International.
             </p>
             <p className="w-[80%]">
               I’m skilled in Supabase, PostgreSQL, and RESTful APIs for building
-              efficient web apps, and I have experience in mechanical design and
-              modeling with tools like CATIA V5, AutoCAD, SolidWorks, and ANSYS.
+              efficient web apps.
             </p>
             <p className="w-[80%]">
               I’m eager to learn, seeking challenges that expand my expertise. I

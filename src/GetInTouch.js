@@ -3,7 +3,7 @@ import sai from "./assets/images/sai.png";
 
 const GetInTouch = () => {
   const mailMe = () => {
-    window.location.href = "mailto:saitejasangisapu2003@gmail.com";
+    window.location.href = "mailto:tejasai38409@gmail.com";
   };
 
   return (

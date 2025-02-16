@@ -3,9 +3,21 @@ import tictactoe from "./assets/images/tictactoe.png";
 import hotstar from "./assets/images/hotstar.png";
 import PokemonFinder from "./assets/images/PokemonFinder.png";
 import Portfolio from "./assets/images/Portfolio.png";
+import ConnectTogether from "./assets/images/ConnectTogether.png";
 
 export default function FeaturedProjects() {
   const projects = [
+    {
+      title: "Connect Together",
+      description:
+        "I developed a real-time chat application using React and Tailwind CSS, enabling seamless communication with instant messaging. The app supports user authentication, real-time updates, and a responsive UI for an engaging experience.",
+      tags: ["React.js", "Tailwind CSS", "WebSockets", "Supabase"],
+      imageUrl: ConnectTogether,
+      links: {
+        github: "http://connect-together-st.vercel.app/",
+      },
+    },
+
     {
       title: "Portfolio Website",
       description:
@@ -91,9 +103,7 @@ export default function FeaturedProjects() {
                 <h3 className="text-xl md:text-2xl text-purple-500 font-semibold mb-2">
                   {project.title}
                 </h3>
-                <p className="text-sm md:text-xl mb-3">
-                  {project.description}
-                </p>
+                <p className="text-sm md:text-xl mb-3">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (
                     <span

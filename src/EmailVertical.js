@@ -1,7 +1,7 @@
 import React from "react";
 
 const EmailVertical = ({
-  email = "saitejasangisapu2003@gmail.com",
+  email = "tejasai38409@gmail.com",
   isWhiteBackground,
 }) => {
   return (

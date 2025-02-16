@@ -3,8 +3,18 @@ import React from "react";
 const Experience = () => {
   const experiences = [
     {
+      title: "Software Developer @ TECHVED Consulting",
+      duration: "january 2025 - Present",
+      responsibilities: [
+        "Developing frontend using React.js, Next.js, Tailwind CSS",
+        "Working on backend with Node.js, Supabase, PostgreSQL",
+        "Building full-stack features & optimizing performance",
+        "Managing databases & API integrations.",
+      ],
+    },
+    {
       title: "Fullstack Developer @ Sumeru Solutions",
-      duration: "january 2024 - Present",
+      duration: "january 2024 - December 2024",
       responsibilities: [
         "Deliver high-quality, robust production code for a diverse range of projects, providing effective solutions for clients such as Art of Living International.",
         "Collaborate with creative directors to research, develop, and architect technical solutions that align with business goals.",
@@ -22,7 +32,7 @@ const Experience = () => {
         </h2>
         <div className="  text-sm md:text-xl">
           {experiences.map((exp, index) => (
-            <article key={index} >
+            <article key={index} className="mb-10">
               <h3 className=" font-semibold">{exp.title}</h3>
               <p>{exp.duration}</p>
               <ul className="list-disc list-inside">

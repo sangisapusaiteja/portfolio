@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import myCV from "./assets/cv.pdf";
+import Resume from "./assets/Saiteja-Sangisapu-Resume.pdf";
 import Logo from "./Logo";
 
 const NavBar = ({ isWhiteBackground }) => {
@@ -17,7 +18,7 @@ const NavBar = ({ isWhiteBackground }) => {
   };
 
   const handleCVClick = () => {
-    window.open(myCV, "_blank");
+    window.open(Resume, "_blank");
   };
 
   const controlNavBarVisibility = () => {
