@@ -3,12 +3,12 @@
   "name": "SaiTeja Portfolio",
   "icons": [
     {
-      "src": "src/assets/images/myphoto.png",
+      "src": "myphoto.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "src/assets/images/myphoto.png",
+      "src": "myphoto.png",
       "type": "image/png",
       "sizes": "512x512"
     }
