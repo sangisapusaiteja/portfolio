@@ -45,16 +45,6 @@ const SocialIcons = ({ isWhiteBackground }) => {
         <FontAwesomeIcon icon={faLinkedin} className="text-2xl md:text-3xl lg:text-4xl" />
       </a>
 
-      <a
-        href="https://codepen.io/SAITEJA-SANGISAPU"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`text-purple-500 ${
-          isWhiteBackground ? "hover:text-black" : "hover:text-white"
-        }`}
-      >
-        <FontAwesomeIcon icon={faCodepen} className="text-2xl md:text-3xl lg:text-4xl" />
-      </a>
 
       <div className="flex justify-center items-center h-full">
         <hr className="w-px h-24 bg-purple-500" />

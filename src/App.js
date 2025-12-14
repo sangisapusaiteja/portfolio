@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import NavBar from "./NavBar";
 import IntroCard from "./IntroCard";
 import About from "./About";
@@ -19,52 +19,57 @@ const App = () => {
 
   return (
     <div
-      className={`overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-800 transition-all duration-500   ${
-        isWhiteBackground ? "bg-white text-black" : "bg-black text-white"
-      }`}
+      className={`relative min-h-screen overflow-y-auto scroll-smooth transition-colors duration-500
+    scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-800
+    ${isWhiteBackground ? "bg-white text-black" : "bg-black text-white"}
+  `}
     >
+      {/* Navbar */}
       <NavBar isWhiteBackground={isWhiteBackground} />
 
-      <div
-        className={`fixed ${
-          isWhiteBackground ? "text-black" : "text-white"
-        } w-[32px] h-[32px] md:w-12 md:h-12 top-20 right-5 md:right-10`}
-      >
-        <FaAdjust
+      {/* Main Content */}
+      <main className="mx-auto flex max-w-8xl flex-col gap-32 px-6 md:px-10 py-20">
+        {/* Theme Toggle */}
+        <button
           onClick={toggleBackground}
-          className={`cursor-pointer ${
-            isWhiteBackground ? "hover:text-black" : "hover:text-white"
-          }`}
-          size={
-            window.innerWidth >= 1024 ? 40 : window.innerWidth >= 640 ? 36 : 32
+          aria-label="Toggle theme"
+          type="button"
+          className={`fixed top-20 right-6 md:top-24 md:right-10 z-50 flex items-center justify-center h-10 w-10 md:h-12 md:w-12 rounded-full border backdrop-blur-md transition-all duration-300 ease-out hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+            isWhiteBackground
+              ? "border-black/20 text-black hover:bg-black hover:text-white focus:ring-black"
+              : "border-white/20 text-white hover:bg-white hover:text-black focus:ring-white"
           }
-        />
-      </div>
-      <div className="flex flex-col items-center justify-between">
-        <div id="intro">
-          <IntroCard />
-        </div>
-        <div id="about">
-          <About />
-        </div>
-        <div id="experience">
-          {" "}
-          <Experience />{" "}
-        </div>
-        <div id="projects">
-          {" "}
-          <Projects />{" "}
-        </div>
-        <div id="contact">
-          {" "}
-          <Contact />{" "}
-        </div>
-        <div id="getintouch">
-          {" "}
-          <GetInTouch />{" "}
-        </div>
-      </div>
+`}
+        >
+          <FaAdjust className="text-xl md:text-2xl" />
+        </button>
 
+        <section id="intro">
+          <IntroCard />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="experience">
+          <Experience />
+        </section>
+
+        <section id="projects">
+          <Projects />
+        </section>
+
+        <section id="contact">
+          <Contact />
+        </section>
+
+        <section id="getintouch">
+          <GetInTouch />
+        </section>
+      </main>
+
+      {/* Floating Socials */}
       <SocialIcons isWhiteBackground={isWhiteBackground} />
       <EmailVertical isWhiteBackground={isWhiteBackground} />
     </div>

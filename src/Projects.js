@@ -1,17 +1,28 @@
-import React from "react";
 import tictactoe from "./assets/images/tictactoe.png";
 import hotstar from "./assets/images/hotstar.png";
 import PokemonFinder from "./assets/images/PokemonFinder.png";
 import Portfolio from "./assets/images/Portfolio.png";
 import ConnectTogether from "./assets/images/ConnectTogether.png";
+import SkillConnect from "./assets/images/SkillConnect.png";
 
 export default function FeaturedProjects() {
   const projects = [
     {
+      title: "Skill Connect",
+      description:
+        "Skill Connect is a unique platform built with Next.js that lets users discover and connect with people based on skills they admire. Users can match with like-minded individuals and chat in real time through a responsive and engaging interface.",
+      tags: ["Next.js", "Tailwind CSS", "WebSockets", "Supabase"],
+      imageUrl: SkillConnect,
+      links: {
+        github: "https://skillconnect-2025.vercel.app/",
+      },
+    },
+
+    {
       title: "Connect Together",
       description:
-        "I developed a real-time chat application using React and Tailwind CSS, enabling seamless communication with instant messaging. The app supports user authentication, real-time updates, and a responsive UI for an engaging experience.",
-      tags: ["React.js", "Tailwind CSS", "WebSockets", "Supabase"],
+        "Connect Together is a full-stack, real-time chat application built with Next.js, Tailwind CSS, and Supabase (PostgreSQL). It supports one-on-one and group chats, room creation, room entry, profile picture uploads, and real-time messaging, all with a responsive and engaging UI.",
+      tags: ["Next.js", "Tailwind CSS", "WebSockets", "Supabase", "PostgreSQL"],
       imageUrl: ConnectTogether,
       links: {
         github: "http://connect-together-st.vercel.app/",

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import myCV from "./assets/cv.pdf";
+import { useState, useEffect } from "react";
 import Resume from "./assets/Saiteja-Sangisapu-Resume.pdf";
 import Logo from "./Logo";
 
@@ -40,8 +39,6 @@ const NavBar = ({ isWhiteBackground }) => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 flex items-center justify-end px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 z-20 transition-transform duration-300 ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      } ${
         isWhiteBackground
           ? "bg-white text-black shadow-lg"
           : "bg-black text-white"

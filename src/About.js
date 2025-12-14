@@ -1,6 +1,4 @@
-import React from "react";
 import myPhoto from "./assets/images/myphoto.png";
-import myCV from "./assets/cv.pdf";
 import Resume from "./assets/Saiteja-Sangisapu-Resume.pdf";
 
 const About = () => {
